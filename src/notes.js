@@ -94,7 +94,9 @@ function renderNotes() {
     deleteButton.textContent = "Slett";
     deleteButton.addEventListener("click", () => removeNote(note.id));
 
-    noteDiv.appendChild(noteText, editButton, deleteButton);
+    noteDiv.appendChild(noteText);
+    noteDiv.appendChild(editButton);
+    noteDiv.appendChild(deleteButton);
     notesContainer.appendChild(noteDiv);
   });
 }
